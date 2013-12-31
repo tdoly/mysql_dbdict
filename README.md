@@ -12,7 +12,7 @@
 
 ##依赖包安装
 
-ubuntu为利
+ubuntu为例
 ```terminal
 sudo apt-get install python-mysqldb
 
