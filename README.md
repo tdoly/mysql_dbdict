@@ -35,4 +35,4 @@ pip install zerorpc
 pip install tornado
 
 ```
-![../static/images/demo.png]
+![demo image](/static/images/demo.png "the demo image")
