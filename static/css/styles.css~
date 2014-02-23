@@ -1,0 +1,302 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 1080px;
+    font: 14px/1.4 Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 10px 30px;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1; /* IE < 8 */
+}
+
+
+/* translation-sidebar start */
+.sidebar {
+    float: left;
+    width: 180px;
+}
+
+.indextable {
+    position: fixed;
+    width: 175px;
+    padding-top: 3px;
+    *padding-top: 20px;
+    work-break: normal;
+    white-space: normal;
+    font-size: 90%;
+}
+
+ul.index-chapter {
+    margin-left: -35px;
+    *margin-left: 0;
+}
+
+ul.index-section {
+    margin-left: -25px;
+    *margin-left:  12px;
+}
+
+ul.index-chapter li {
+    list-style: none outside none;
+    margin-left: 0;
+}
+
+ul.index-section li {
+    list-style: square outside none;
+    margin-left: 5px;
+}
+
+ul.index-chapter li a, ul.index-chapter li a:visited {
+    color: #777;
+}
+
+ul.index-section li a, ul.index-section li a:visited {
+    color: #000;
+}
+
+ul.index-chapter li a:hover, ul.index-section li a:hover {
+    color: #0095C4;
+    text-decoration: underline;
+}
+
+ul.index-chapter li a.current-chapter, ul.index-chapter li a.current-chapter:visited {
+    color: #000;
+}
+
+ul.index-chapter li a.current-chapter:hover {
+    color: #0095C4;
+}
+/* translation-sidebar end */
+
+
+/* translation-article start */
+.article {
+    margin-left: 180px;
+    border-left: 1px solid #888;
+    padding: 0  20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: SimHei, STHeiti, sans-serif;
+    text-align: right;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+h2, h3, h4 {
+    font-family: Microsoft Yahei, LiHei Pro Medium, sans-serif;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+h5 {
+    font-style: italic;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+}
+
+p {
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+}
+
+a, a:visited  {
+    color: #0000ff;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+.headerlink {
+    margin-left: 5px;
+}
+
+a.headerlink {
+    color: #fff;
+}
+
+a.headerlink:hover {
+    background: #fff;
+    color: #BDB76A;
+}
+
+.figure {
+    text-align: center;
+}
+
+.figure img {
+}
+
+.figure p {
+    font-style: italic;
+    margin-top: 0;
+}
+
+cite {
+    font-weight: bold;
+}
+
+.cite-description {
+    border-top: 1px solid #777;
+    margin: 30px 0;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+dfn {
+    font-family: Roboto, monospace;
+    font-style: normal;
+    letter-spacing: -1px;
+}
+
+code, kbd, var, pre {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    margin: 0 2px;
+}
+
+code {
+}
+
+kbd {
+    font-weight: bold;
+}
+
+var {
+    font-weight: bold;
+    font-style: normal;
+}
+
+pre {
+    letter-spacing: -1px;
+}
+
+.shell {
+    margin-left: 50px;
+}
+
+.codelist {
+}
+
+.codelist-title, .codelist-code {
+    margin-left: 50px;
+}
+
+.codelist-title {
+    font-style: italic;
+    padding: 3px 0;
+    border-bottom: 2px solid #444;
+}
+
+.filename, .bookname, .examplename, .term {
+    font-style: italic;
+    margin: 0 2px;
+}
+
+.warning, .tip {
+    min-height: 85px;
+    margin: 20px 0 20px 50px;
+}
+
+.warning {
+    background: url(../images/warning.jpg) no-repeat left top;
+}
+
+.warning p, .warning pre {
+    margin: 20px 100px 10px 140px;
+}
+
+.tip {
+    background: url(../images/tip.jpg) no-repeat left top;
+}
+
+.tip p, .tip pre {
+    margin: 20px 100px 10px 100px;
+}
+
+.box {
+    border: 1px solid #222;
+    padding: 10px 15px;
+}
+
+.box h1{
+    font-family: Microsoft Yahei, LiHei Pro Medium, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+
+.indentation {
+    margin-left: 25px;
+}
+/* translation-article end */
+
+
+/* translation-footer start */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+}
+/* translation-footer end */
+
+
+/* index start */
+.cover {
+    float: left;
+    width: 425px;
+    position: fixed;
+}
+
+.menu {
+    margin-left: 425px;
+}
+
+.menu h1 {
+    text-align: center;
+}
+
+.menu ul li {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.menu ul li a, .menu ul li a:visited {
+    color: #333;
+}
+
+.menu ul li a:hover {
+    color: #0095C4;
+    text-decoration: underline;
+}
+/* index end */

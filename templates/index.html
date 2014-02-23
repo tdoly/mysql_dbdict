@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <title>MySql数据库字典</title>
+        <link rel="stylesheet" href="{{ static_url("css/styles.css") }}"></link>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <div class="indextable">
+                    <ul class="index-chapter">
+                        {% for db in dbs %}
+                        <li><a href="{{ db }}">{{ db }}</a></li>
+                            {% if db == currentDb %}
+                                <ul class="index-section">
+                                {% for data in datas %}
+                                <li><a href="#{{ data }}">{{ data }}</a></li>
+                                {% end %}
+                                </ul>
+                            {% end %}
+                        {% end %}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="article">
+                <h1>{{ currentDb }}</h1>
+                {% for data in datas %}
+                    <h2>
+                        {{ data }}
+                        <a id="{{ data }}" class="headerlink" href="#{{ data }}"></a>
+                    </h2>
+                    <p>
+                        {% if datas[data] %}
+                            <table class="bordered">
+                            <thead>
+                                <tr>
+                                    <th>Field</th>
+                                    <th>Type</th>
+                                    <th>Null</th>
+                                    <th>Key</th>
+                                    <th>Default</th>
+                                    <th>Extra</th>
+                                </tr>
+                            <thead>
+                            <tbody>
+                                {% for line in datas[data] %}
+                                <tr>
+                                    <td>{{ line[0] }}</td>
+                                    <td>{{ line[1] }}</td>
+                                    <td>{{ line[2] }}</td>
+                                    <td>{{ line[3] }}</td>
+                                    <td>{{ line[4] }}</td>
+                                    <td>{{ line[5] }}</td>
+                               </tr>
+                                {% end %}
+                            </tbody>
+                            </table>
+                        {% end %}
+                    </p>
+                {% end %}
+            </div>
+
+            <div class="footer">
+                <small>
+                    copyright 2014 <a href="http://blog.tdoly.com">tdoly</a>
+                </small>
+            </div>
+        </div>
+    </body>
+</html>

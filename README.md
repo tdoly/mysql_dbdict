@@ -23,3 +23,16 @@ pip install xlwt
 pip install xlutils
 
 ```
+
+##2014.2.23更新日志
+
+* 使用了zerorpc
+* 使用了tornado
+
+```terminal
+
+pip install zerorpc
+pip install tornado
+
+```
+![../static/images/demo.png]
